@@ -23,7 +23,7 @@ public class Firewall {
     static List<NetworkInfo> rules = new ArrayList<NetworkInfo>();
     public static void main(String[] args) {
         try {
-            Firewall fw = new Firewall("networks.csv");
+            Firewall fw = new Firewall("pathToRulesFile.csv");
 
             // Valid test cases taken from coding assessment
             System.out.println(fw.acceptPacket("inbound", "tcp", 80, "192.168.1.2"));

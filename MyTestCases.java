@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 public class MyTestCases {
     public static void main(String[] args) {
         try {
-            Firewall fw = new Firewall("networks.csv");
+            Firewall fw = new Firewall("pathToRulesFile.csv");
 
             System.out.println("Testing method verifyDirection..");
             if(fw.verifyDirection("inbound", "inbound"))
